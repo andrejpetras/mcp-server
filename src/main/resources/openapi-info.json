@@ -1,0 +1,14 @@
+{
+  "info": {
+    "version": "1.0",
+    "title": "MCP server",
+    "description": "MCP server example",
+    "contact": {
+      "email": "team@lorislab.org"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  }
+}

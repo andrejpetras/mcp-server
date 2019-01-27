@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  # Docker image for the P6
+  mcp-server:
+    container_name: mcp-server
+    image: lorislab/mcp-server
+    environment:
+        DEBUG: "true"
+        DEBUG_PORT: "*:8787"
+    restart: on-failure
+    ports: 
+        - "8080:8080"
+        - "8787:8787"
+
+  mcp-client:
+    container_name: mcp-client
+    image: lorislab/mcp-client
+#    environment:
+#      DEBUG: "true"
+#      DEBUG_PORT: "*:8787"
+    restart: on-failure
+    ports:
+      - "9090:8080"
